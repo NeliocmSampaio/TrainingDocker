@@ -15,7 +15,7 @@ COPY *.go ./
 RUN go mod init example.com/getting-started-go
 RUN go mod tidy
 
-RUN go build -o ./runnable ./main.go
+RUN go build -o ./app ./main.go
 
 RUN ls -l
-CMD [ "./runnable" ]
+CMD [ "./app" ]
